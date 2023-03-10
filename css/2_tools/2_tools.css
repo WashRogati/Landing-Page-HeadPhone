@@ -1,0 +1,75 @@
+@media only screen and (max-width: 550px) {
+
+    body{
+        overflow-x: hidden;
+    }
+
+    #brand{
+        margin-left: 0px;
+    }
+
+    #btn-sacola, #btn-login{
+        display: none;
+    }
+
+    #picture > img{
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        opacity: .5;
+    }
+
+    #navigation>ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #navigation>ul>li {
+        padding: 30 0px;
+        margin-top: 15px;
+
+    }
+
+    #navigation {
+        top: 80px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 80px);
+        position: absolute;
+        z-index: 10;
+        background-color: #6066f2;
+    }
+
+    #navigation > ul > li > a {
+        color: white !important;
+        font-size: 25px !important;
+        
+    }
+
+    #navigation.active{
+        left: 0px;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .item-menu-responsive{
+    visibility: visible !important;
+    }
+
+    #footer{
+        text-align: center;
+        padding-top: 100px;
+    }
+    #footer > small{
+        text-align: center;
+        padding-top: 100px;
+        color: white !important;
+    }
+
+    .menu-toggle{
+        opacity: 1 !important;
+    }
+}
+
+
